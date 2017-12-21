@@ -1,0 +1,345 @@
+html,body{
+	background: #f9f9f9;
+}
+/* wash_tit */
+.wash_tit{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.wash_tit ul{
+	height: 84px;
+	display: flex;
+	flex-direction: row;
+}
+.wash_tit ul li{
+	width: 20%;
+	color: #999;
+	font-size: 13px;
+	text-align: center;
+	line-height: 26px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 12px;
+	cursor: pointer;
+}
+.wash_tit ul li b{
+	width: 39px;
+	height: 39px;
+	margin: 0 auto;
+}
+.wash_tit ul li b.clothes{
+	background: url('../images/wash_clothes.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li b.shoes{
+	background: url('../images/wash_shoes.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li b.home{
+	background: url('../images/wash_home.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li b.curtain{
+	background: url('../images/wash_curtain.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li b.bag{
+	background: url('../images/wash_bag.png') no-repeat;
+	background-size: cover;
+}
+
+
+.wash_tit ul li.cur{
+	color: #00cee7;
+}
+.wash_tit ul li.cur b.clothes{
+	background: url('../images/wash_clothes0.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li.cur b.shoes{
+	background: url('../images/wash_shoes0.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li.cur b.home{
+	background: url('../images/wash_home0.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li.cur b.curtain{
+	background: url('../images/wash_curtain0.png') no-repeat;
+	background-size: cover;
+}
+.wash_tit ul li.cur b.bag{
+	background: url('../images/wash_bag0.png') no-repeat;
+	background-size: cover;
+}
+
+
+
+/* wash_button */
+#wash_button{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	position: fixed;
+	letter-spacing: 2px;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+	background: url('../images/btn_bottom.png') no-repeat;
+	background-size: cover;
+}
+#wash_button a{
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+}
+
+/* wash_text */
+.wash_text{
+	margin: 15px 12px 0;
+	background: #fff;
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+}
+.wash_icon{
+	width: 33.3333%;
+	text-align: center;
+	color: #666;
+}
+.wash_icon img{
+	width: 39px;
+	height: 39px;
+	display: block;
+	margin: 17px auto 6px;
+}
+
+/* wash_text0 */
+.wash_text0{
+	width: 100%;
+	height: 170px;
+}
+.wash_text0 h1{
+	margin: 27px 0 20px 0;
+	text-align: center;
+}
+.wash_text0 h1 img{
+	width: 65px;
+	height: 20px;
+}
+.wash_text0 .con{
+	border-top: #eee 1px solid;
+	color: #ccc;
+	padding: 15px 0 20px 0;
+	text-align: center;
+}
+.wash_text0 .con a{
+	color: #00cee7;
+	margin-top: 10px;
+	display: block;
+}
+
+/* wash */
+.wash{
+	width: 100%;
+	margin-top: 94px;
+	background: #fff;
+	display: none;
+}
+.wash_tab{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 15px;
+}
+.wash_tab li{
+	font-size: 13px;
+	cursor: pointer;
+	text-align: center;
+	color: #999;
+	width: 25%;
+}
+.wash_tab li.w{
+	width: 50%;
+}
+.wash_tab li.cur{
+	color: #333;
+	
+}
+.wash_tab li span{
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+}
+.wash_tab li.cur span{
+	border-bottom: #000 2px solid;	
+}
+.wash_con{
+	width: 100%;
+	display: none;
+}
+.wash_con ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.wash_con li{
+	text-align: center;
+	margin: 15px 0 18px ;
+	width: 33.3333%;
+	overflow: hidden;
+}
+
+.wash_con li img{
+	width: 75px;
+	height: 90px;
+	display: block;
+	margin: 0 auto;
+}
+.wash_con li span{
+	display: block;
+}
+.wash_con li .text{
+	font-size: 13px;
+	margin: 12px 0 7px;
+}
+.wash_con li .price{
+	color: #999;
+}
+.wash_con li .price b{
+	display: inline-block;
+	vertical-align: -1px;
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+/* wash_curtain */
+.wash_curtain,.wash_bag{
+	padding: 0 15px;
+	overflow: hidden;
+}
+.wash_curtain li{
+	border-top: #eee 1px solid;
+	padding: 10px 0 7px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+.wash_curtain li:first-child{
+	border-top: 0;
+}
+.wash_bag li{
+	border-bottom: #eee 1px solid;
+	padding: 10px 0 7px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+
+}
+.wash_curtain li .pic,.wash_bag li .pic{
+	width: 43%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.wash_curtain li .pic img,.wash_bag li .pic img{
+	width: 125px;
+	height: 125px;
+}
+.wash_curtain li .text,.wash_bag li .text{
+	padding: 16px 0 0 0;
+	width: 57%;
+	box-sizing: border-box;
+}
+.wash_curtain li .tt,.wash_bag li .tt{
+	color: #999;
+	margin-bottom: 5px;
+}
+.wash_curtain li .tt i,.wash_bag li .tt i{
+	margin: 0 3px;
+	display: inline-block;
+	vertical-align: -1px;
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+}
+.wash_curtain li .price{
+	font-size: 15px;
+	color: #f36700;
+	margin-bottom: 15px;
+}
+.wash_curtain li .price i,.wash_bag li .price i{
+	margin: 0 5px;
+}
+.wash_bag li .price{
+	font-size: 15px;
+	color: #f36700;
+	margin-bottom: 6px;
+}
+.wash_bag li b img{
+	width: 18px;
+	height: 18px;
+	vertical-align: -4px;
+}
+.wash_bag li .may{
+	color: #999;
+	margin: 5px 0 5px;
+}
+.wash_bag li .may0{
+	color: #999;
+	margin: 25px 0 5px;
+}
+/* wash_thing */
+.wash_thing{
+	margin: 10px 12px 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 3px 2px #eee;
+}
+.wash_thing h3{
+	background: #f0f2f5;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.wash_thing li{
+	background: #fff;
+	line-height: 20px;
+	text-align: center;
+	border-top: #eee 1px solid;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+.wash_thing li:first-child{
+	border-top: 0;
+}
+.wash_thing b{
+	color: #00ce77;
+}
+.wash_thing div{
+	padding: 7px 0;
+}
+.wash_thing .name{
+	width: 40%;	
+	display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.wash_thing .con{
+	width: 60%;
+	border-left: #eee 1px solid;
+	box-sizing: border-box;
+}

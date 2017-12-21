@@ -1,0 +1,179 @@
+html{
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body{
+	line-height: 1.6;
+	font-size: 12px;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+@font-face{
+	font-family: 'PingFang-Medium';
+	src: url('../font/PingFang-Medium.ttf') format('truetype');
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+ul,li{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #333;
+	outline: none;
+}
+input,button,textarea{
+	outline: none;
+	-webkit-appearance: none;
+}
+input[type="checkbox"]{
+	-webkit-appearance: checkbox;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+	color: #ccc;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{
+	color: #ccc;
+}
+input::-ms-input-placeholder,textarea::-ms-input-placeholder{
+	color: #ccc;
+}
+button{
+	border: 0;
+	color: #fff;
+	font-size: 17px;
+	height: 50px;
+	line-height: 50px;
+	letter-spacing: 2px;
+}
+i{
+	font-style: normal;
+}
+b{
+	font-weight: normal;
+}
+
+/* footer_tab */
+#footer_tab{
+	width: 100%;
+	height: 49px;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	bottom: 0;
+	z-index: 9999;
+	overflow: hidden;
+}
+#footer_tab a{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 25%;
+	color: #666;
+	padding-top: 5px;
+}
+#footer_tab a.cur{
+	color: #333;
+}
+#footer_tab a span{
+	display: block;
+	margin: 0 auto;
+	padding-top: 23px;
+}
+#footer_tab a .tab_index{
+	background: url('../images/tab_index.png') no-repeat;
+	background-size: 22px 22px;
+}
+#footer_tab a.cur .tab_index{
+	background: url('../images/tab_index_cur.png') no-repeat;
+	background-size: 22px 22px;
+}
+#footer_tab a .tab_order{
+	background: url('../images/tab_order.png') no-repeat;
+	background-size: 22px 22px;
+
+}
+#footer_tab a.cur .tab_order{
+	background: url('/images/tab_order_cur.png') no-repeat;
+	background-size: 22px 22px;
+}
+#footer_tab a .tab_welfare{
+	background: url('../images/tab_index.png') no-repeat;
+	background-size: 22px 22px;
+}
+#footer_tab a.cur .tab_welfare{
+	background: url('../images/tab_welfare_cur.png') no-repeat;
+	background-size: 22px 22px;
+}
+#footer_tab a .tab_mine{
+	background: url('../images/tab_mine.png') no-repeat;
+	background-size: 22px 22px;
+}
+#footer_tab a.cur .tab_mine{
+	background: url('../images/tab_mine_cur.png') no-repeat;
+	background-size: 22px 22px;
+}
+
+/* mask */
+#mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+/* popbox */
+#popbox{
+	width: 280px;
+	background: #fff;
+	padding-top: 25px;
+	position: fixed;
+	left: 50%;
+	margin-left: -140px;
+	top: 50%;
+	z-index: 10000;
+	text-align: center;
+}
+#popbox h2{
+	font-size: 18px;
+}
+#popbox .text{
+	color: #666;
+	font-size: 15px;	
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+#popb_con{
+	width: 100%;
+	border-top: #eee 1px solid;
+	display: flex;
+	flex-direction: column;
+}
+#popbox .btn{
+	width: 50%;
+	font-size: 16px;
+	height: 50px;
+	cursor: pointer;
+	color: #00cee7;
+}
+#popbox .btn01{
+	width: 100%;
+}
+#popbox .btn02{
+	color: #333;
+	box-sizing: border-box;
+	border-right: #eee 1px solid;
+}

@@ -1,0 +1,320 @@
+html{
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body{
+	font-size: 12px;
+	color: #333;
+	line-height: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+html,body{
+	height: 100%;
+	background: #f9f9f9;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+ul,li{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+h2{
+	font-size: 13px;
+	color: #666;
+}
+a{
+	text-decoration: none;
+	font-size: 12px;
+	outline: none;
+}
+b{
+	font-weight: normal;
+	display: inline-block;
+}
+i{
+	font-style: normal;
+}
+input,textarea,button{
+	outline: none;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+	color: #ccc;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{
+	color: #ccc;
+}
+input::-ms-input-placeholder,textarea::-ms-input-placeholder{
+	color: #ccc;
+}
+button{
+	border: 0;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+/* jiadian_tit */
+.jiadian_tit{
+	width: 100%;
+	background: #fff;
+	position: relative;
+	line-height: 40px;
+	height: 40px;
+}
+.jiadian_tit h1{
+	font-size: 17px;
+	text-align: center;
+}
+.jiadian_tit .myOrder{
+	width: 60px;
+	font-size: 13px;
+	color: #666;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	padding-right: 15px;
+}
+/* jiadian_infor */
+.jiadian_infor{
+	background: #fff;
+	width: 100%;
+}
+.jiadian_infor_con{
+	border-top: #eee 1px solid;
+	padding: 15px 15px 10px;
+	position: relative;
+}
+.jiadian_infor_con input{
+	border: 0;
+	font-size: 17px;
+	margin-top: 5px;
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+}
+
+.jiadian_infor_con b{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 32px;
+	right: 15px;
+	display: block;
+	background: url('../images/click_icon.png') no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.jiadian_infor_con p.mt{
+	margin-top: 5px;
+}
+.jiadian_infor_con p{
+	line-height: 24px;
+}
+.jiadian_infor_con .tel{
+	margin-left: 50px;
+}
+.error{
+	width: 100px;
+	color: #cc3300;
+	position: absolute;
+	left: 85px;
+	top: 14px;
+	display: none;
+}
+/* jiadian_sel */
+.jiadian_sel{
+	width: 100%;
+	margin-top: 10px;
+	background: #fff;
+	position: relative;
+}
+.jiadian_sel h2{
+	padding: 15px 15px 10px;
+}
+.jiadian_sel ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+.jiadian_sel ul li{
+	width: 108px;
+	height: 150px;
+	background: #fff;
+	margin: 5px 10px;
+	text-align: center;
+	box-shadow: 0 0px 15px #f2f2f2;
+	position: relative;
+} 
+.jiadian_sel ul li img{
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	display: block;
+}
+.jiadian_sel ul li a span{
+	display: block;
+	color: #333;
+	font-size: 13px;
+}
+.jiadian_sel ul li a span.text{
+	margin: 12px 0 7px;
+	
+}
+.jiadian_sel ul li a span.price{
+	font-size: 12px;
+	color: #666;
+}
+.jiadian_sel ul li span b{
+	display: inline-block;
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	vertical-align: -1px;
+	margin-right: 1px;
+}
+.jiadian_sel ul li .round{
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 100%;
+	background: #f5a623;
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	top: -9px;
+	right: -9px;
+	z-index: 3;
+	display: none;
+	box-shadow: 0 0 5px #f5a623;
+}
+/* jiadian_wait */
+#jiadian_wait{
+	padding: 25px 15px 0;
+	width: 100%;
+	box-sizing: border-box;
+	background: #fff;
+	position: relative;
+}
+#jiadian_del{
+	width: 14px;
+	height: 17px;
+	background: url('../images/del_icon.png') no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 43px;
+	right: 20px;
+	cursor: pointer;
+}
+#jiadian_wait h2{
+	border-top: #eee 1px solid;
+	padding: 15px 0 5px;
+}
+#jiadian_wait ul li{
+	border-top: #eee 1px solid;
+	display: flex;
+	flex-direction: row;
+	padding: 15px 0;
+	font-size: 17px;
+}
+#jiadian_wait ul li:first-child{
+	border-top: 0;
+}
+#jiadian_wait ul li div{
+	width: 33.3333%;
+}
+#jiadian_wait ul li .tit{
+	width: 30%;
+}
+#jiadian_wait ul li .price{
+	color: #666;
+	text-align: center;
+}
+#jiadian_wait ul li input{
+	width: 35px;
+	text-align: center;
+	font-size: 17px;
+	height: 22px;
+	line-height: 22px;
+	border: 0;
+}
+#jiadian_wait ul li .num{
+	display: flex;
+	flex-direction: row-reverse;
+}
+#jiadian_wait ul li b{
+	cursor: pointer;
+	display: block;	
+}
+#jiadian_wait ul li b.add{
+	width: 22px;
+	height: 22px;
+	background: url('../images/add_icon.png') no-repeat;
+	background-size: cover;
+}
+#jiadian_wait ul li b.minus{
+	width: 22px;
+	height: 22px;
+	background: url('../images/minus_icon.png') no-repeat;
+	background-size: cover;
+}
+
+/* remark*/
+#remark{
+	margin-top: 10px;
+	background: #fff;
+	padding: 15px 15px 50px;
+	width: 100%;
+	box-sizing: border-box;
+}
+#remark textarea{
+	width: 100%;
+	border: 0;
+	line-height: 25px;
+	font-size: 17px;
+	min-height: 50px;
+	margin-top: 10px;
+}
+/* jiadian_sub */
+#jiadian_sub{
+	width: 100%;
+	background: #fff;
+	height: 49px;
+	line-height: 49px;
+	position: fixed;
+	bottom: 0;
+	box-shadow: 0 -1px 5px #f2f2f2;
+}
+#jiadian_sub button{
+	width: 120px;
+	font-size: 17px;
+	color: #fff;
+	float: right;
+	height: 49px;
+	line-height: 49px;
+	background: #00dbf5;
+	cursor: pointer;
+}
+
+#jiadian_total{
+	width: 60%;
+	padding-left: 15px;
+	font-size: 17px;
+	float: left;
+} 
+#jiadian_total b{
+	color: #00dbf5;
+
+}

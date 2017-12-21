@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" >
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<meta name="format-detection" content="email=no">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+<body>
+<!-- login -->
+<div id="login">
+	<form name="login" method="post" action="">
+		<h1>
+			<img src="images/login_logo.png" /><br/>
+			让生活多份自在
+		</h1>
+		<div class="con">
+			<input type="text" placeholder="请输入手机号" />
+			<span id="close"></span>
+		</div>
+		<div class="con">
+			<input type="text" placeholder="请输入收到的验证码" />
+			<span id="btn_get">获取验证码</span>
+		</div>
+		<div class="con pr">
+			<input type="text" placeholder="图片验证码" />
+			<a href="#" class="yzm_pic"><img src="images/05.jpg" /><br/>看不清？换一换</a>
+		</div>
+		<button type="submit" class="may">登录</button>
+	</form>
+</div>
+<!-- login end -->
+
+<div id="pop_suc">验证码发送成功</div>
+</body>
+</html>

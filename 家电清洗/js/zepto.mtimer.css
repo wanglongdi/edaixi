@@ -1,0 +1,117 @@
+﻿
+.mt_body{
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+.mt_panel{
+	background-color: #fff;
+	height: 300px;
+}
+
+.mt_date{
+	width: 100%;
+	height: 200px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.mt_body ul li{
+	height: 42px;
+	line-height: 42px;
+	font-size: 15px;
+	color: #999;
+}
+.mt_indicate, .mt_indicate:after{
+	top: 85px;
+	position: absolute;
+	border-top: 1px solid #eee;
+	width: 100%;
+	height: 0;
+	font-size: 0;
+}
+.mt_indicate:after{
+	content: "";
+    top: 45px;
+}
+
+.mt_body li.selected{
+	color: #333;
+	font-size: 17px;
+}
+.mt_body ul .mt_note{
+	font-size: 12px;
+	color: #000;
+}
+.mt_confirm{
+	text-align: center;
+	background: #f9f9f9;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+.mt_ok{
+	width: 60px;
+	line-height: 50px;
+	display: block;
+	cursor: pointer;
+	font-size: 15px;
+	color: #00dbf5;
+	float: right;
+}
+.mt_cancel{
+	width: 60px;
+	line-height: 50px;
+	display: block;
+	cursor: pointer;
+	font-size: 15px;
+	color: #666;
+	float: left;
+}
+.mt_mask{
+	width: 100%;
+    height: 100%;
+    -moz-transition: opacity .5s linear 0s;
+    -webkit-transition: opacity .5s linear 0s;
+    -o-transition: opacity .5s linear 0s;
+    -ms-transition: opacity .5s linear 0s;
+    transition: opacity .5s linear 0s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    visibility: hidden;
+    background: #000;
+    opacity: 0;
+    z-index: 10;
+}
+.mt_mask.show{
+	visibility: visible;
+	opacity: 0.25;
+}
+.mt_poppanel {
+    -moz-transition: -moz-transform .3s ease-in-out 0s;
+    -ms-transition: -ms-transform .3s ease-in-out 0s;
+    -webkit-transition: -webkit-transform .3s ease-in-out 0s;
+    -o-transition: -o-transform .3s ease-in-out 0s;
+    transition: transform .3s ease-in-out 0s;
+    -ms-transform: translate3d(0,100%,0);
+    -moz-transform: translate3d(0,100%,0);
+    -webkit-transform: translate3d(0,100%,0);
+    -o-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 11;
+    -webkit-user-select : none;
+}
+.mt_poppanel.show{
+	-ms-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

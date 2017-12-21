@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" >
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<meta name="format-detection" content="email=no">
+	<title>E袋洗-家电清洗</title>
+	<link rel="stylesheet" type="text/css" href="css/jiadian.css" />
+	<link rel="stylesheet" type="text/css" href="js/zepto.mtimer.css" />
+</head>
+<body>
+<!-- jiadian_tit -->
+<div class="jiadian_tit">
+	<h1>家电清洗</h1>
+	<a href="#" class="myOrder">我的订单</a>
+</div>
+<!-- jiadian_tit end -->
+
+<!-- jiadian_infor -->
+<div class="jiadian_infor">
+	<!-- jiadian_infor_con -->
+	<div class="jiadian_infor_con">
+		<h2>服务时间</h2>
+		<div class="error">请选择服务时间</div>
+		<input type="text" placeholder="请选择服务时间" id="input_time" readonly />
+		<b id="selTime"></b>
+	</div>
+	<!-- jiadian_infor_con -->
+	<div class="jiadian_infor_con">
+		<h2>服务地址</h2>
+		<div class="error">请选择服务地址</div>
+		<b id="selAdress"></b>
+		<input type="text" placeholder="请选择服务地址" id="input_adress" readonly />
+		<div id="adressId" data-data="eee">
+			<p class="mt">
+				<span class="name">{$address['username']}</span><span class="tel">{$address['tel']}</span>
+			</p >
+	      	<p class="adr">{$address['address']}</p>
+		</div>
+		
+	</div>
+</div>
+<!-- jiadian_infor end -->
+
+<!-- jiadian_sel -->
+<div class="jiadian_sel">
+	<h2>服务内容</h2>
+	<div class="error">请选择服务内容</div>
+	<ul>
+		<li>
+			<a href="javascript:;" tapy_id='a'>
+				<img src="images/jiadian_01.png" />
+				<span class="text">空调</span>
+				<span class="price"><b>¥</b><i>15.10</i></span>
+			</a>
+			<b class="round">0</b>
+		</li>
+		<li>
+			<a href="javascript:;" tapy_id='b'>
+				<img src="images/jiadian_02.png" />
+				<span class="text">洗衣机</span>
+				<span class="price"><b>¥</b><i>25.33</i></span>
+			</a>
+			<b class="round">0</b>
+		</li>
+		<li>
+			<a href="javascript:;" tapy_id='c'>
+				<img src="images/jiadian_03.png" />
+				<span class="text">抽油烟机</span>
+				<span class="price"><b>¥</b><i>20.00</i></span>
+			</a>
+			<b class="round">0</b>
+		</li>
+		<li>
+			<a href="javascript:;" tapy_id='d'>
+				<img src="images/jiadian_04.png" />
+				<span class="text">冰箱</span>
+				<span class="price"><b>¥</b><i>39.00</i></span>
+			</a>
+			<b class="round">0</b>
+		</li>
+	</ul>
+
+</div>
+<!-- jiadian_sel end -->
+
+<!-- jiadian_wait -->
+<div id="jiadian_wait" class="hide">
+	<h2>待清洗清单</h2>
+	<b id="jiadian_del"></b>
+	<ul></ul>
+</div>
+<!-- jiadian_wait end -->
+
+<!-- remark -->
+<div id="remark" class="hide">
+	<h2>备注</h2>
+	<textarea placeholder="请填写备注信息" ></textarea>
+</div>
+<!-- remark end -->
+
+<!-- jiadian_sub -->
+<div id="jiadian_sub">
+	<div id="jiadian_total">
+		总计：<b>¥0.00</b>
+	</div>
+	<button type="button" id="subBtn">确认</button>
+</div>
+<!-- jiadian_sub end -->
+<input id="inputOrder" type="hidden" name="[]" />
+<input id="inputMoney" type="hidden" />
+
+
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/zepto.mtimer.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/json_parse.js"></script>
+<script type="text/javascript" src="js/jiadian.js"></script>
+
+</body>
+</html>

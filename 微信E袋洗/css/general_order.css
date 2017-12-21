@@ -1,0 +1,68 @@
+/* general_info */
+.general_info{
+	width: 100%;
+	background: #fff;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	border-size: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: row;	
+}
+.general_bt{
+	border-top: #eee 1px solid;
+}
+.general_info b{
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	margin-top: -12px;
+}
+.general_info b.adr{
+	width: 24px;
+	height: 24px;
+	background: url('../images/general_adr.png') no-repeat;
+	background-size: cover;
+}
+.general_info b.time{
+	width: 24px;
+	height: 24px;
+	background: url('../images/general_time.png') no-repeat;
+	background-size: cover;
+}
+.general_info b.remarks{
+	width: 24px;
+	height: 24px;
+	background: url('../images/general_remarks.png') no-repeat;
+	background-size: cover;
+}
+.general_click{
+	width: 18px;
+	height: 18px;
+	background: url('../images/btn_right.png') no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -9px;
+	display: inline-block;
+}
+.general_info input{
+	font-size: 15px;
+	border: 0;
+	color: #333;
+	height: 30px;
+	width: 80%;
+}
+.general_adr{
+	width: 100%;
+	font-size: 15px;
+}
+.general_adr .tel{
+	margin-left: 30px;
+}
+.general_adr .adr{
+	color: #666;
+	margin-top: 10px;
+}

@@ -1,0 +1,96 @@
+#login{
+	padding: 100px 15px 0;
+	overflow: hidden;
+}
+#login h1{
+	font-size: 12px;
+	color: #666;
+	letter-spacing: 2px;
+	font-family: 'PingFang-Medium';
+	margin-bottom: 50px;
+	text-align: center;
+}
+#login h1 img{
+	width: 72px;
+	height: 22px;
+}
+#login .con{
+	position: relative;
+	margin-bottom: 15px;	
+	width: 100%;
+	box-sizing: border-box;	
+}
+#login input{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 15px;	
+	font-size: 15px;
+	border: #cacaca 1px solid;	
+	box-sizing: border-box;
+}
+#login .pr{
+	padding-right: 90px;
+}
+#login button{
+	width: 100%;
+	margin-top: 70px;
+	background: url('../images/btn_dis.png') no-repeat;
+	background-size: cover;
+}
+#login button.may{
+	cursor: pointer;
+	background: url('../images/btn_ok.png') no-repeat;
+	background-size: cover;
+}
+#btn_get{
+	width: 95px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	cursor: pointer;
+	position: absolute;
+	top: -1px;
+	right: 0;
+}
+#login .yzm_pic{
+	color: #00cee7;
+	width: 90px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: right;
+	line-height: 14px;
+}
+#login .yzm_pic img{
+	width: 85px;
+	height: 36px;
+}
+
+#close{
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	position: absolute;
+	top: 16px;
+	right: 15px;
+	background: url('../images/login_close.png') no-repeat;
+	background-size: cover;
+}
+#pop_suc{
+	width: 130px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 14px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -25px;
+	margin-left: -65px;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	z-index: 10000;
+}

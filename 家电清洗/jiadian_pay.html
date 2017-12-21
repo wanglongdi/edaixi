@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" >
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<meta name="format-detection" content="email=no">
+	<title>E袋洗-家电清洗-订单结算</title>
+	<link rel="stylesheet" type="text/css" href="css/jiadian.css" />
+	<link rel="stylesheet" type="text/css" href="css/jiadian_order.css" />
+</head>
+<body>
+<!-- jiadian_tit -->
+<div class="jiadian_tit">
+	<h1>订单结算</h1>
+</div>
+<!-- jiadian_tit end -->
+
+<!-- jiadian_order -->
+<div class="jiadian_order">
+	<!-- jiadian_number -->
+	<div class="jiadian_number">
+		<dl>
+			<dt>订单编号</dt>
+			<dd>199783377728111</dd>
+		</dl>
+		<dl class="mt">
+			<dt>服务时间</dt>
+			<dd>周五（2017年12月15日）</dd>
+		</dl>
+	</div>
+	<!-- jiadian_kind -->
+	<div class="jiadian_kind">
+		<ul>
+			<li>
+				<div class="name">
+					洗衣机
+				</div>
+				<div class="num">
+					<b>X</b>2
+				</div>
+				<div class="price">
+					¥300.00
+				</div>
+			</li>
+			<li>
+				<div class="name">
+					冰箱
+				</div>
+				<div class="num">
+					<b>X</b>1
+				</div>
+				<div class="price">
+					¥90.00
+				</div>
+			</li>
+			<b class="open"></b>
+		</ul>	
+	</div>
+	<!-- jiadian_kind_total -->
+	<div class="jiadian_kind_total">
+		共计清洗品类<b class="num_total">3</b>件<span>合计：</span><b class="money_total">¥300</b><b class="small_num">.00</b>
+	</div>
+</div>
+<!-- jiadian_order end -->
+
+<!-- jiadian_money -->
+<div class="jiadian_money">
+	<h2>
+		<b></b>余额支付
+	</h2>
+	<div class="con" style="display: none">
+		余额400.00<span class="ml">支付</span><b id="pay_total" class="my">399.00</b><b class="right_icon"></b>
+	</div>
+	<div class="con">
+		余额400.00<a href="#">去充值<b class="right_click"></b></a>
+	</div>
+</div>
+<!-- jiadian_money end -->
+
+<!-- jiadian_pay -->
+<div id="jiadian_pay">
+	<button type="button" class="sub">确认支付 ¥390.00</button>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jiadian.js"></script>	
+<script>
+	
+	$('#jiadian_pay').on('click','button.sub',function(){
+		window.location.href="http://www.baidu.com";
+	})
+
+</script>
+</body>
+</html>

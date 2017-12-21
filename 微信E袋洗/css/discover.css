@@ -1,0 +1,44 @@
+body{
+	background: #f9f9f9;
+	padding-top: 10px;
+}
+
+.discover{
+	margin: 0 15px 15px 15px;
+	background: #fff;
+	padding: 0 10px;
+	line-height: 50px;
+	overflow: hidden;
+}
+
+.discover h2{
+	font-size: 15px;
+	font-family: 'PingFang-Medium';
+	font-weight: bold;
+}
+.discover img{
+	max-width: 100%;
+	display: block;
+}
+.discover .text{
+	font-size: 13px;
+	color: #666;
+	border-bottom: #eee 1px solid;
+	padding: 15px 0;
+	line-height: 20px;
+}
+.discover .text0{
+	font-size: 13px;
+	position: relative;
+}
+
+.discover .text0 b{
+	background: url(../images/btn_right.png) no-repeat;
+	width: 18px;
+	height: 18px;
+	background-size: cover;
+	position: absolute;
+	right: 5px;
+	top: 15px;
+
+}
